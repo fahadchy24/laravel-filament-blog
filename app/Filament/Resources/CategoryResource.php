@@ -42,7 +42,7 @@ class CategoryResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('id')->sortable(),
+                TextColumn::make('id')->sortable()->sortable(),
                 TextColumn::make('name')->limit(50)->sortable(),
                 TextColumn::make('slug')->limit(50)
             ])
